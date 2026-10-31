@@ -13,7 +13,7 @@ No build system, no tests, no package manifest at this level.
 ```
 README.md                     # GitHub landing page
 docs/
-├── screen-shot/              # home, strategies, assistant, firmware-updates (.png)
+├── screen-shot/              # home, strategies, assistant, firmware-updates, camera-node, wiki-rag (.png)
 ├── hardware/                 # lppc-node.jpg (ESP32-C6 watering node), nrf-node.jpg (nRF52840 solar node)
 └── deployment/               # balcony.jpg (hero), blueberry-probe.jpg, pots.jpg
 code/                         # symlinks, ignored by git

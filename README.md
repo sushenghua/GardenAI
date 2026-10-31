@@ -2,7 +2,7 @@
 
 > Garden nodes that sleep on batteries and solar, a home server that decides when to water, and an AI assistant that can only propose changes for the gardener to approve.
 
-- **Nodes**: ESP32-C6 watering node (12 V pump), ESP32-S3 vertical farm controller (light, fan, two water lines), nRF52840 solar sensor node behind an ESP32-S3 BLE gateway, ESP32 camera node.
+- **Nodes**: ESP32-C6 watering node (12 V pump), ESP32-S3 vertical farm controller (light, fan, two water lines), nRF52840 solar sensor node behind an ESP32-S3 BLE gateway, ESP32-S3 camera node whose photos a vision model checks.
 - **Server** (Python): MQTT broker, watering / alert / report strategies, weather, signed firmware rollout, the assistant.
 - **App** (React + TypeScript, Capacitor iOS): readings, strategies, Bluetooth setup, firmware releases, chat.
 
@@ -18,6 +18,10 @@
     <td align="center"><img src="docs/screen-shot/strategies.png" alt="Watering strategy editor" width="200" /><br><em>Strategies</em></td>
     <td align="center"><img src="docs/screen-shot/assistant.png" alt="Assistant chat listing the tools it used" width="200" /><br><em>Assistant</em></td>
     <td align="center"><img src="docs/screen-shot/firmware-updates.png" alt="Firmware releases: canary, stable, withdrawn" width="200" /><br><em>Firmware releases</em></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><img src="docs/screen-shot/camera-node.png" alt="Camera node photo of a climbing vine with the vision model's report: looks too dry, wilting, browning stems, 82 % confidence" width="260" /><br><em>Camera node: photo and vision health report</em></td>
+    <td align="center" colspan="2"><img src="docs/screen-shot/wiki-rag.png" alt="Notes written by the assistant and a gardening guide imported into them, with a search for pest returning cited pages" width="260" /><br><em>LLM wiki notes and guide search (RAG)</em></td>
   </tr>
 </table>
 
