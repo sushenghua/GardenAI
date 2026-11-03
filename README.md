@@ -23,6 +23,10 @@
     <td align="center" colspan="2"><img src="docs/screen-shot/camera-node.png" alt="Camera node photo of a climbing vine with the vision model's report: looks too dry, wilting, browning stems, 82 % confidence" width="260" /><br><em>Camera node: photo and vision health report</em></td>
     <td align="center" colspan="2"><img src="docs/screen-shot/wiki-rag.png" alt="Notes written by the assistant and a gardening guide imported into them, with a search for pest returning cited pages" width="260" /><br><em>LLM wiki notes and guide search (RAG)</em></td>
   </tr>
+  <tr>
+    <td align="center" colspan="2"><img src="docs/screen-shot/vertical-farm.png" alt="Vertical farm node: readings plus light, fan, herbaceous and shrub water outputs with switches" width="260" /><br><em>Vertical farm: readings and switchable outputs</em></td>
+    <td align="center" colspan="2"><img src="docs/screen-shot/alert-strategy.png" alt="Alert strategy editor: forecast gusts above 60 km/h, hazard presets, look-ahead and cooldown" width="260" /><br><em>Alert strategy: forecast conditions and cooldown</em></td>
+  </tr>
 </table>
 
 ## How it works
@@ -67,12 +71,16 @@ The design rule: **the LLM advises, plain code decides, a person approves.**
     <td align="center"><img src="docs/hardware/nrf-node.jpg" alt="nRF52840 node: solar lid, Li-ion cell, MAX3485, SHT31, soil probe" width="400" /><br><em>Sensor node: nRF52840 (Zephyr, MCUboot), solar Li-ion, BLE only</em></td>
   </tr>
   <tr>
+    <td align="center"><img src="docs/hardware/lppc-pcb.jpg" alt="Watering node PCB v6: ESP32-S3 DevKitC-1, headers for two BTS7960 modules, 10 A choke, buck converter, rocker switch" width="400" /><br><em>Watering node PCB v6: ESP32-S3, two pump drivers, 140 × 100 mm</em></td>
+    <td align="center"><img src="docs/hardware/nrf-pcb.jpg" alt="nRF52840 sensor node carrier PCB with the SuperMini, RS485 module and current-limited sensor rail" width="300" /><br><em>Sensor node carrier PCB: nRF52840, current-limited sensor rail, 55 × 35 mm</em></td>
+  </tr>
+  <tr>
     <td align="center"><img src="docs/deployment/blueberry-probe.jpg" alt="Soil probe and drip emitter in a blueberry pot" width="300" /><br><em>Probe and drip emitter in the blueberry pot</em></td>
     <td align="center"><img src="docs/deployment/pots.jpg" alt="Balcony pots on the drip line" width="400" /><br><em>Balcony pots on the drip line</em></td>
   </tr>
 </table>
 
-Custom KiCad boards for both nodes are generated from Python scripts with a small grid router.
+Both PCBs are KiCad boards generated from Python scripts: parts, nets and tracks are placed by script, the rest routed by a small rule-aware grid router.
 
 ## Tests
 
@@ -89,4 +97,4 @@ code/                    # symlinks to the private product repos (available on r
 
 ## Status
 
-In daily use on a balcony in Auckland: the nRF sensor node, the vertical farm, the server on a home VM, and the web and iOS app. The custom PCBs are designed, not yet fabricated.
+In daily use on a balcony in Auckland: the nRF sensor node, the vertical farm, the server on a home VM, and the web and iOS app. Both PCBs are fabricated; the watering node's v6 board is in bring-up.
