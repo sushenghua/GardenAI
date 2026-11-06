@@ -8,6 +8,7 @@
 
 <p align="center">
   <img src="docs/deployment/balcony.jpg" alt="Solar nRF52840 sensor node on a balcony railing next to potted blueberries on a drip line" width="340" />
+  <img src="docs/deployment/plantcam.jpg" alt="Solar camera node at the edge of a blackberry pot, looking at the plant" width="340" />
 </p>
 
 ## The app
@@ -73,6 +74,13 @@ The design rule: **the LLM advises, plain code decides, a person approves.**
   <tr>
     <td align="center"><img src="docs/hardware/lppc-pcb.jpg" alt="Watering node PCB v6: ESP32-S3 DevKitC-1, headers for two BTS7960 modules, 10 A choke, buck converter, rocker switch" width="400" /><br><em>Watering node PCB v6: ESP32-S3, two pump drivers, 140 × 100 mm</em></td>
     <td align="center"><img src="docs/hardware/nrf-pcb.jpg" alt="nRF52840 sensor node carrier PCB with the SuperMini, RS485 module and current-limited sensor rail" width="300" /><br><em>Sensor node carrier PCB: nRF52840, current-limited sensor rail, 55 × 35 mm</em></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/hardware/plantcam-node.jpg" alt="Camera node: black case with camera window, antenna and solar panel" width="300" /><br><em>Camera node: ESP32-S3 camera, solar, in its case</em></td>
+    <td align="center"><img src="docs/hardware/nrf-node-enclosed.jpg" alt="nRF52840 sensor node closed up: solar lid and RS485 soil probe" width="400" /><br><em>Sensor node, closed: solar lid and soil probe</em></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><img src="docs/hardware/lppc-enclosure.jpg" alt="Watering node v6 PCB in an outdoor box: battery pack, pump driver, pump on a printed mount, soil probe" width="400" /><br><em>Outdoor enclosure demo: watering node v6 board, battery, pump and probe</em></td>
   </tr>
   <tr>
     <td align="center"><img src="docs/deployment/blueberry-probe.jpg" alt="Soil probe and drip emitter in a blueberry pot" width="300" /><br><em>Probe and drip emitter in the blueberry pot</em></td>

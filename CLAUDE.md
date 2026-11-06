@@ -14,8 +14,8 @@ No build system, no tests, no package manifest at this level.
 README.md                     # GitHub landing page
 docs/
 ├── screen-shot/              # home, strategies, assistant, firmware-updates, camera-node, wiki-rag, vertical-farm, alert-strategy (.png)
-├── hardware/                 # lppc-node.jpg, nrf-node.jpg (hand-wired builds), lppc-pcb.jpg, nrf-pcb.jpg (PCBs)
-└── deployment/               # balcony.jpg (hero), blueberry-probe.jpg, pots.jpg
+├── hardware/                 # lppc-node.jpg, nrf-node.jpg (hand-wired builds), lppc-pcb.jpg, nrf-pcb.jpg (PCBs), plantcam-node.jpg, nrf-node-enclosed.jpg, lppc-enclosure.jpg
+└── deployment/               # balcony.jpg, plantcam.jpg (hero pair), blueberry-probe.jpg, pots.jpg
 code/                         # symlinks, ignored by git
 ├── GardenCareServer        → GardenCare/Server
 ├── GardenCareClient        → GardenCare/Client
