@@ -83,6 +83,10 @@ The design rule: **the LLM advises, plain code decides, a person approves.**
     <td align="center" colspan="2"><img src="docs/hardware/lppc-enclosure.jpg" alt="Watering node PCB in an outdoor box: battery pack, pump driver, pump on a printed mount, soil probe" width="400" /><br><em>Outdoor enclosure demo: watering node board, battery, pump and probe</em></td>
   </tr>
   <tr>
+    <td align="center"><img src="docs/deployment/garden-bed.jpg" alt="Watering node PCB in its outdoor box on a raised garden bed, with the water bucket and drip line" width="300" /><br><em>Watering node PCB on a raised garden bed: box, water bucket, drip line</em></td>
+    <td align="center"><img src="docs/deployment/garden-bed-probe.jpg" alt="Soil probe in the seed bed, with drip line and mist nozzles along the side" width="300" /><br><em>Soil probe in the seed bed</em></td>
+  </tr>
+  <tr>
     <td align="center"><img src="docs/deployment/blueberry-probe.jpg" alt="Soil probe and drip emitter in a blueberry pot" width="300" /><br><em>Probe and drip emitter in the blueberry pot</em></td>
     <td align="center"><img src="docs/deployment/pots.jpg" alt="Balcony pots on the drip line" width="400" /><br><em>Balcony pots on the drip line</em></td>
   </tr>
@@ -105,4 +109,4 @@ code/                    # symlinks to the private product repos (available on r
 
 ## Status
 
-In daily use on a balcony in Auckland: the nRF sensor node, the vertical farm, the server on a home VM, and the web and iOS app. Both PCBs are fabricated; the watering node board is in bring-up.
+In daily use in Auckland: the nRF sensor node on the balcony, the vertical farm, the server on a home VM, and the web and iOS app. Both PCBs are fabricated; the watering node PCB has run since 4 Nov and now waters a raised garden bed.
