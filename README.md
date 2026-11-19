@@ -64,6 +64,20 @@ The design rule: **the LLM advises, plain code decides, a person approves.**
 | Firmware | Signed images (ECDSA / RSA, MCUboot on nRF). Offered only to healthy nodes, outside a watering window. A new image boots as a test and must reach the server or the bootloader rolls back; a rollback pauses the release. Canary first, stable only after the gardener approves, then a 24 h health watch. |
 | Access | API token for the app and MCP; MCP refuses browser origins. LLM API keys are never sent back to the client. Alerts have a cooldown so one problem is one email. |
 
+## How it is developed
+
+AI agents do most of the development; the gardener sets requirements and makes the calls.
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/dev-loop/dev-loop.jpg" alt="Dev loop: issue board, agent implements, agent tests, release to canary, canary to stable, nodes and app run, logs become issues" width="400" /></td>
+    <td align="center"><img src="docs/dev-loop/nightly-loop.jpg" alt="Nightly loop: sync, pick up to 3 issues, find the cause, fix and release or leave for the gardener, morning report" width="400" /></td>
+  </tr>
+</table>
+
+- **Dev loop**: requirements and bugs go on an issue board. Agents implement and test them. The server deploys, firmware goes to canary nodes, then to stable after a clean canary. Logs and crash reports from the running system become new issues.
+- **Nightly loop**: at 2:00 AM crashes are filed as issues and an agent takes up to 3. It finds the cause from evidence, writes a failing test, fixes, and deploys the server or releases canary firmware, never stable. Changes to watering amounts, the node protocol, firmware updates or security wait for the gardener. It ends with a written report.
+
 ## Hardware
 
 <table>
@@ -96,7 +110,7 @@ Both PCBs are KiCad boards generated from Python scripts: parts, nets and tracks
 
 ## Tests
 
-Server 292 (pytest), client 81 (Vitest), firmware 35 host tests of the hardware-free logic (offline backlog, schedule, clock, battery, soil probe), plus a clean build of every firmware app.
+Server 324 (pytest), client 187 (Vitest), firmware 74 host tests of the hardware-free logic (offline backlog, schedule, clock, battery, soil probe), plus a clean build of every firmware app.
 
 ## Repository layout
 
