@@ -76,7 +76,7 @@ AI agents do most of the development; the gardener sets requirements and makes t
 </table>
 
 - **Dev loop**: requirements and bugs go on an issue board. Agents implement and test them. The server deploys, firmware goes to canary nodes, then to stable after a clean canary. Logs and crash reports from the running system become new issues.
-- **Nightly loop**: at 2:00 AM crashes are filed as issues and an agent takes up to 3. It finds the cause from evidence, writes a failing test, fixes, and deploys the server or releases canary firmware, never stable. Changes to watering amounts, the node protocol, firmware updates or security wait for the gardener. It ends with a written report.
+- **Nightly loop**: at 2:00 AM crashes are filed as issues and an agent takes up to 3. It finds the cause from evidence, fixes it with a test that fails without the fix, and deploys the server or releases canary firmware, never stable. Changes to watering amounts, the node protocol, the firmware update system or security wait for the gardener. It ends with a written report.
 
 ## Hardware
 
